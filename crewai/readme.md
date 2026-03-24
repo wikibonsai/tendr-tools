@@ -1,6 +1,4 @@
-# tendr-tools/crewai
-
-## CrewAI Integration
+# CrewAI Integration
 
 `tendr_tool.py` — A CrewAI Tool for safe WikiBonsai cultivation.
 
@@ -10,10 +8,11 @@
 from crewai import Agent
 from tendr_tools.crewai.tendr_tool import tendr
 
-researcher = Agent(
+gardener = Agent(
     role="Knowledge Gardener",
-    goal="Tend the team's semantic memory",
+    goal="Tend and cultivate the team's semantic memory",
     tools=[tendr],
     verbose=True
 )
 ```
+
